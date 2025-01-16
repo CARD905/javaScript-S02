@@ -9,4 +9,7 @@ async function run() {
     console.log("Start!!");
     await promiseTimeout(2000);
     console.log("Stop!");
-}run();
+}
+console.log("Before run");
+run();
+console.log("After run");

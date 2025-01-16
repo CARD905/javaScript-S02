@@ -9,8 +9,11 @@ async function longRunningOperation() {
 async function run() {
     console.log("Start!!");
     await promiseTimeout(2000);
-    const resonse = await longRunningOperation();
+    const response = await longRunningOperation();
     console.log(response);
+
     console.log("Stop!!");
 }
+console.log("Before run");
 run();
+console.log("After run");

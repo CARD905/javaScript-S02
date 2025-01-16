@@ -1,12 +1,12 @@
-function yayorNay(){
+function yay0rNay(){
     return new Promise((resolve,reject)=> {
         const val = Math.round(Math.random() * 1);
-        val ? resoolve("Lucky!!") : reject("Nope..");
+        val ? resolve("Lucky!!") : reject("Nope..");
     });
 }
 async function msg() {
     try{
-        const msg = await yayorNay();
+        const msg = await yay0rNay();
         console.log(msg);
     }catch (err){
         console.log(err);
